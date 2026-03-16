@@ -13,6 +13,7 @@ export interface GithubRepo {
   stargazers_count: number;
   forks_count: number;
   open_issues_count: number;
+  size: number;
   topics: string[];
   archived: boolean;
   fork: boolean;
