@@ -318,7 +318,7 @@ export class GithubService {
     if (cached) return cached;
 
     const issues = await this.fetchAllPages(
-      `${this.baseUrl}/repos/${org}/${repo}/issues`,
+      `${this.baseUrl}/repos/${org}/${repo}/issues?state=all`,
     );
     this.cacheService.set(cacheKey, issues);
     return issues;
